@@ -1,0 +1,30 @@
+enum Car {
+    lamborghini, tata, audi, fiat, honda
+}
+
+public class EnumAndSwitch {
+    public static void main(String args[]) {
+        Car c;
+        c = Car.tata;
+        switch(c) {
+            case lamborghini:
+                System.out.println("You choosed lamborghini");
+                break;
+            case tata:
+                System.out.println("You choosed tata");
+                break;
+            case audi:
+                System.out.println("You choosed audi");
+                break;
+            case fiat:
+                System.out.println("You choosed fiat");
+                break;
+            case honda:
+                System.out.println("You choosed honda");
+                break;
+            default:
+                System.out.println("I don't know your model");
+                break;
+        }
+    }
+}
